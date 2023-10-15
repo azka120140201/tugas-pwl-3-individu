@@ -1,13 +1,144 @@
-body {
+/* index.css */
+
+/* Reset default margin and padding */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FAF9F6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #845EC2;
+  color: #FAF9F6;
+  padding: 1rem;
+}
+
+/* Main Styles */
+main {
+  background-color: #FAF9F6;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #845EC2;
+  color: #FAF9F6;
+  padding: 0.5rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Heading Styles */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  margin: 0.5rem 0; /* Mengganti margin-bottom dengan margin */
+}
+
+/* Textarea Styles */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 0.5rem 0; /* Mengganti margin-bottom dengan margin */
+}
+
+/* Button Styles */
+button {
+  background-color: #845EC2;
+  color: #FAF9F6;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #D65DB1;
+}
+
+/* Header Navigation Styles */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #FAF9F6;
+  text-decoration: none;
+  background-color: #845EC2;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #D65DB1;
+}
+
+/* Contact Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  width: 10%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  width: 45%; /* Membuat textarea (pesan) lebar penuh */
+  height: 150px; /* Menambahkan tinggi pada textarea untuk membuatnya lebih besar */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
 }
